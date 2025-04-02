@@ -2,9 +2,9 @@ import os
 from pathlib import Path
 import logging
 
-logging.basicConfig(level=logging.INFO, format='[%(asctime)s] : %(message)s:')
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s : %(message)s]')
 
-project_name = "ds-e2e-project1"
+project_name = "ds_e2e_project1"
 
 list_of_files = [
   ".github/workflows/.gitkeep",

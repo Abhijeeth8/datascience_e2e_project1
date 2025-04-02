@@ -1,0 +1,1 @@
+from src.ds-e2e-project1 import logger
