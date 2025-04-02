@@ -1,1 +1,41 @@
+[2025-04-02 00:35:26,779 : INFO : main : --------stage Data Ingestion Stage started------------]
+[2025-04-02 00:35:26,781 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 00:35:26,782 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 00:35:26,782 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 00:35:26,783 : INFO : common : Directory artifacts created]
+[2025-04-02 00:35:26,783 : INFO : common : Directory artifacts/data_ingestion created]
+[2025-04-02 00:35:28,674 : INFO : data_ingestion_component : artifacts/data_ingestion/data.zip downloaded from the url https://github.com/Abhijeeth8/datasets/raw/refs/heads/main/winequality-data.zip with headers Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 53C3:28FDF7:17DFE3:1E9350:67ECAD76
+Accept-Ranges: bytes
+Date: Wed, 02 Apr 2025 04:35:27 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mia-kmia1760097-MIA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1743568528.754704,VS0,VE94
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 3fcbd2d82a9ca4201a47d4b754479d6dc038681b
+Expires: Wed, 02 Apr 2025 04:40:27 GMT
+Source-Age: 0
 
+]
+[2025-04-02 00:36:03,752 : INFO : main : --------stage Data Ingestion Stage started------------]
+[2025-04-02 00:36:03,753 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 00:36:03,754 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 00:36:03,755 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 00:36:03,756 : INFO : common : Directory artifacts created]
+[2025-04-02 00:36:03,756 : INFO : common : Directory artifacts/data_ingestion created]
+[2025-04-02 00:36:03,756 : INFO : data_ingestion_component : File already exists]
+[2025-04-02 00:36:03,757 : INFO : common : Directory artifacts/data_ingestion created]
+[2025-04-02 00:36:03,762 : INFO : main : --------stage Data Ingestion Stage completed------------]
