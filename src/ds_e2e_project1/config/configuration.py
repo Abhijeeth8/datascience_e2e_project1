@@ -1,6 +1,6 @@
 from src.ds_e2e_project1.constants import *
 from src.ds_e2e_project1.utils.common import read_yaml, create_directories
-from src.ds_e2e_project1.entity.config_entity import DataIngestionConfig
+from src.ds_e2e_project1.entity.config_entity import DataIngestionConfig, DataValidationConfig
 
 class ConfigurationManager:
   def __init__(
@@ -24,3 +24,15 @@ class ConfigurationManager:
       unzip_dir=self.config.data_ingestion.unzip_dir
     )
     return dataIngestionConfig
+  
+  def get_data_validation_config(self) -> DataValidationConfig:
+    config = self.config.data_validation
+    create_directories([config.root_dir])
+
+    dataValidationConfig = DataValidationConfig(
+      unzip_data_dir= config.unzip_data_dir,
+      root_dir= config.root_dir,
+      STATUS_FILE= config.STATUS_FILE,
+      expected_schema= self.schema.COLUMNS
+    )
+    return dataValidationConfig
