@@ -21,3 +21,13 @@ class DataTransformationConfig:
   data_path: Path
   train_data_path: Path
   test_data_path: Path
+
+@dataclass
+class ModelTrainingConfig:
+  root_dir: Path
+  train_data_path: Path
+  test_data_path: Path
+  model_name: str
+  alpha: float
+  l1_ratio: float
+  target_col: str

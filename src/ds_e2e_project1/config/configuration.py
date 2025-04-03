@@ -1,7 +1,7 @@
 import os
 from src.ds_e2e_project1.constants import *
 from src.ds_e2e_project1.utils.common import read_yaml, create_directories
-from src.ds_e2e_project1.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig
+from src.ds_e2e_project1.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainingConfig
 
 class ConfigurationManager:
   def __init__(
@@ -51,4 +51,20 @@ class ConfigurationManager:
     )
 
     return data_transformation_config
+  
+  def get_model_training_config(self) -> ModelTrainingConfig:
+    config = self.config.model_training
+    create_directories([config.root_dir])
+
+    model_training_config = ModelTrainingConfig(
+      alpha=self.params.ElasticNet.alpha,
+      l1_ratio=self.params.ElasticNet.l1_ratio,
+      target_col=self.schema.TARGET_COLUMN.name,
+      model_name=config.model_name,
+      root_dir=config.root_dir,
+      test_data_path=config.test_data_path,
+      train_data_path=config.train_data_path
+    )
+    
+    return model_training_config
 
