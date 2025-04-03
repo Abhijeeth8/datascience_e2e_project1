@@ -14,3 +14,10 @@ class DataValidationConfig:
   unzip_data_dir: Path
   STATUS_FILE: Path
   expected_schema: dict
+
+@dataclass
+class DataTransformationConfig:
+  root_dir: Path
+  data_path: Path
+  train_data_path: Path
+  test_data_path: Path

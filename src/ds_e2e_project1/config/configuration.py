@@ -1,6 +1,7 @@
+import os
 from src.ds_e2e_project1.constants import *
 from src.ds_e2e_project1.utils.common import read_yaml, create_directories
-from src.ds_e2e_project1.entity.config_entity import DataIngestionConfig, DataValidationConfig
+from src.ds_e2e_project1.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig
 
 class ConfigurationManager:
   def __init__(
@@ -36,3 +37,18 @@ class ConfigurationManager:
       expected_schema= self.schema.COLUMNS
     )
     return dataValidationConfig
+  
+  def get_data_transformation_configuration(self) -> DataTransformationConfig:
+    config = self.config.data_transformation
+    create_directories([config.root_dir])
+
+
+    data_transformation_config = DataTransformationConfig(
+      data_path= config.data_path,
+      root_dir=config.root_dir,
+      train_data_path = os.path.join(config.root_dir, "train.csv"),
+      test_data_path = os.path.join(config.root_dir, "test.csv")
+    )
+
+    return data_transformation_config
+

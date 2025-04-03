@@ -67,3 +67,158 @@ Source-Age: 0
 [2025-04-02 19:19:37,876 : INFO : common : Directory artifacts/data_validation created]
 [2025-04-02 19:19:38,087 : INFO : data_validation_pipeline : Is the data valid : True]
 [2025-04-02 19:19:38,087 : INFO : main : --------stage Data Validation Stage completed------------]
+[2025-04-02 20:01:10,690 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 20:01:16,246 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 20:01:16,557 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 20:01:18,411 : INFO : common : Directory artifacts created]
+[2025-04-02 20:01:19,393 : INFO : common : Directory artifacts/data_transformation created]
+[2025-04-02 20:06:33,005 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 20:06:33,007 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 20:06:33,286 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 20:06:33,287 : INFO : common : Directory artifacts created]
+[2025-04-02 20:06:33,304 : INFO : common : Directory artifacts/data_transformation created]
+[2025-04-02 20:07:34,059 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 20:07:34,069 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 20:07:34,072 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 20:07:34,073 : INFO : common : Directory artifacts created]
+[2025-04-02 20:07:34,075 : INFO : common : Directory artifacts/data_transformation created]
+[2025-04-02 20:08:38,821 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 20:08:38,823 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 20:08:38,841 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 20:08:38,843 : INFO : common : Directory artifacts created]
+[2025-04-02 20:08:38,844 : INFO : common : Directory artifacts/data_transformation created]
+[2025-04-02 20:09:09,701 : INFO : common : Directory artifacts/data_transformation\train.csv created]
+[2025-04-02 20:09:09,949 : INFO : common : Directory artifacts/data_transformation\test.csv created]
+[2025-04-02 20:10:00,018 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 20:10:00,021 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 20:10:00,024 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 20:10:00,025 : INFO : common : Directory artifacts created]
+[2025-04-02 20:10:00,026 : INFO : common : Directory artifacts/data_transformation created]
+[2025-04-02 20:10:50,885 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 20:10:50,887 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 20:10:50,890 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 20:10:50,975 : INFO : common : Directory artifacts created]
+[2025-04-02 20:10:51,001 : INFO : common : Directory artifacts/data_transformation created]
+[2025-04-02 21:11:12,752 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 21:11:12,780 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 21:11:12,789 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 21:11:12,790 : INFO : common : Directory artifacts created]
+[2025-04-02 21:11:12,791 : INFO : common : Directory artifacts/data_transformation created]
+[2025-04-02 21:11:22,723 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 21:11:22,769 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 21:11:22,772 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 21:11:22,774 : INFO : common : Directory artifacts created]
+[2025-04-02 21:11:22,775 : INFO : common : Directory artifacts/data_transformation created]
+[2025-04-02 21:15:41,887 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 21:15:41,889 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 21:15:41,892 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 21:15:41,893 : INFO : common : Directory artifacts created]
+[2025-04-02 21:15:41,895 : INFO : common : Directory artifacts/data_transformation created]
+[2025-04-02 21:15:41,980 : INFO : 2151764962 : Data split into train and test datasets with shapes:
+Train data shape : (1279, 12)\Test data shape : (320, 12)]
+[2025-04-02 21:15:58,748 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 21:15:58,751 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 21:15:58,755 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 21:15:58,757 : INFO : common : Directory artifacts created]
+[2025-04-02 21:15:58,758 : INFO : common : Directory artifacts/data_transformation created]
+[2025-04-02 21:15:58,814 : INFO : 4134411701 : Data split into train and test datasets with shapes:
+Train data shape : (1279, 12)
+Test data shape : (320, 12)]
+[2025-04-02 21:26:50,418 : INFO : utils : NumExpr defaulting to 8 threads.]
+[2025-04-02 21:27:08,581 : INFO : main : --------stage Data Ingestion Stage started------------]
+[2025-04-02 21:27:08,613 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 21:27:08,638 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 21:27:08,650 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 21:27:08,652 : INFO : common : Directory artifacts created]
+[2025-04-02 21:27:08,653 : INFO : common : Directory artifacts/data_ingestion created]
+[2025-04-02 21:27:10,855 : INFO : data_ingestion_component : artifacts/data_ingestion/data.zip downloaded from the url https://github.com/Abhijeeth8/datasets/raw/refs/heads/main/winequality-data.zip with headers Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: FE36:3307F8:3EEFD:51966:67EDE3EE
+Accept-Ranges: bytes
+Date: Thu, 03 Apr 2025 01:27:11 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mia-kmia1760053-MIA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1743643631.440767,VS0,VE103
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 9b81f3171a8210e1db29e08b76ea67c2ef2197bd
+Expires: Thu, 03 Apr 2025 01:32:11 GMT
+Source-Age: 0
+
+]
+[2025-04-02 21:27:11,064 : INFO : common : Directory artifacts/data_ingestion created]
+[2025-04-02 21:27:11,468 : INFO : main : --------stage Data Ingestion Stage completed------------]
+[2025-04-02 21:27:11,469 : INFO : main : --------stage Data Validation Stage started------------]
+[2025-04-02 21:27:11,471 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 21:27:11,471 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 21:27:11,474 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 21:27:11,475 : INFO : common : Directory artifacts created]
+[2025-04-02 21:27:11,475 : INFO : common : Directory artifacts/data_validation created]
+[2025-04-02 21:27:12,550 : INFO : data_validation_pipeline : Is the data valid : True]
+[2025-04-02 21:27:12,551 : INFO : main : --------stage Data Validation Stage completed------------]
+[2025-04-02 21:27:12,551 : INFO : main : --------stage Data Transformation Stage started------------]
+[2025-04-02 21:27:12,552 : INFO : main : --------stage Data Transformation Stage completed------------]
+[2025-04-02 21:29:12,840 : INFO : utils : NumExpr defaulting to 8 threads.]
+[2025-04-02 21:29:13,893 : INFO : main : --------stage Data Ingestion Stage started------------]
+[2025-04-02 21:29:13,895 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 21:29:13,924 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 21:29:13,925 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 21:29:13,926 : INFO : common : Directory artifacts created]
+[2025-04-02 21:29:13,927 : INFO : common : Directory artifacts/data_ingestion created]
+[2025-04-02 21:29:14,488 : INFO : data_ingestion_component : artifacts/data_ingestion/data.zip downloaded from the url https://github.com/Abhijeeth8/datasets/raw/refs/heads/main/winequality-data.zip with headers Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: FE36:3307F8:3EEFD:51966:67EDE3EE
+Accept-Ranges: bytes
+Date: Thu, 03 Apr 2025 01:29:15 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mia-kmia1760086-MIA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1743643755.235910,VS0,VE4
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 4abbe7ab1bbf95e4ca52c3b17b7bea08f1b094e1
+Expires: Thu, 03 Apr 2025 01:34:15 GMT
+Source-Age: 124
+
+]
+[2025-04-02 21:29:14,490 : INFO : common : Directory artifacts/data_ingestion created]
+[2025-04-02 21:29:14,502 : INFO : main : --------stage Data Ingestion Stage completed------------]
+[2025-04-02 21:29:14,502 : INFO : main : --------stage Data Validation Stage started------------]
+[2025-04-02 21:29:14,503 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 21:29:14,504 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 21:29:14,506 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 21:29:14,507 : INFO : common : Directory artifacts created]
+[2025-04-02 21:29:14,507 : INFO : common : Directory artifacts/data_validation created]
+[2025-04-02 21:29:14,528 : INFO : data_validation_pipeline : Is the data valid : True]
+[2025-04-02 21:29:14,528 : INFO : main : --------stage Data Validation Stage completed------------]
+[2025-04-02 21:29:14,529 : INFO : main : --------stage Data Transformation Stage started------------]
+[2025-04-02 21:29:14,530 : INFO : common : YAML file config\config.yaml read successfully]
+[2025-04-02 21:29:14,531 : INFO : common : YAML file params.yaml read successfully]
+[2025-04-02 21:29:14,533 : INFO : common : YAML file schema.yaml read successfully]
+[2025-04-02 21:29:14,534 : INFO : common : Directory artifacts created]
+[2025-04-02 21:29:14,535 : INFO : common : Directory artifacts/data_transformation created]
+[2025-04-02 21:29:15,187 : INFO : data_transformation_component : Data split into train and test datasets with shapes:
+Train data shape : (1279, 12)
+Test data shape : (320, 12)]
+[2025-04-02 21:29:15,216 : INFO : main : --------stage Data Transformation Stage completed------------]
