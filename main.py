@@ -3,6 +3,7 @@ from src.ds_e2e_project1.pipeline.data_ingestion_pipeline import DataIngestionPi
 from src.ds_e2e_project1.pipeline.data_validation_pipeline import DataValidationPipeline
 from src.ds_e2e_project1.pipeline.data_transformation_pipeline import DataTransformationPipeline
 from src.ds_e2e_project1.pipeline.model_training_pipeline import ModelTrainingPipeline
+from src.ds_e2e_project1.pipeline.model_evaluation_pipeline import ModelEvaluationPipeline
 
 
 STAGE_NAME="Data Ingestion Stage"
@@ -46,6 +47,17 @@ if __name__ == "__main__":
       logger.info(f"--------stage {STAGE_NAME} started------------")
       model_training_pipeline = ModelTrainingPipeline()
       model_training_pipeline.initiate_model_training()
+      logger.info(f"--------stage {STAGE_NAME} completed------------")
+    except Exception as e:
+      raise e
+    
+  STAGE_NAME="Model Evaluation Stage"
+
+  if __name__ == "__main__":
+    try:
+      logger.info(f"--------stage {STAGE_NAME} started------------")
+      model_evaluation_pipeline = ModelEvaluationPipeline()
+      model_evaluation_pipeline.initiate_model_evaluation()
       logger.info(f"--------stage {STAGE_NAME} completed------------")
     except Exception as e:
       raise e

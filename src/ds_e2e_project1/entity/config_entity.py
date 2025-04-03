@@ -31,3 +31,13 @@ class ModelTrainingConfig:
   alpha: float
   l1_ratio: float
   target_col: str
+
+@dataclass
+class ModelEvaluationConfig:
+  root_dir: Path
+  model_path: Path
+  test_data_path: Path
+  metrics_file_name: Path
+  mlflow_tracking_uri: str
+  target_col: str
+  model_params: dict

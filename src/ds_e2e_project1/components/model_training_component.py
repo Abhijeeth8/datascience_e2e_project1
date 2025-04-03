@@ -10,8 +10,8 @@ class ModelTraining:
 
   def load_train_test_data(self):
     train_data = pd.read_csv(self.config.train_data_path)
-    X_train = train_data.drop(columns=[self.config.target_col]).values
-    y_train = train_data[self.config.target_col].values
+    X_train = train_data.drop(columns=[self.config.target_col])
+    y_train = train_data[self.config.target_col]
     return X_train, y_train
 
   def train_ElasticNet_model(self):

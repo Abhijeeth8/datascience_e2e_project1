@@ -1,7 +1,11 @@
 import os
 from src.ds_e2e_project1.constants import *
 from src.ds_e2e_project1.utils.common import read_yaml, create_directories
-from src.ds_e2e_project1.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainingConfig
+from src.ds_e2e_project1.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainingConfig, ModelEvaluationConfig
+
+os.environ["MLFLOW_TRACKING_URI"] = "https://dagshub.com/AbhijeethKollarapu/datascience_e2e_project1.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"] = "AbhijeethKollarapu"
+os.environ["MLFLOW_TRACKING_PASSWORD"] = "6b5ffdc1153cff3a2c47770bb59dbd134785df4b"
 
 class ConfigurationManager:
   def __init__(
@@ -67,4 +71,18 @@ class ConfigurationManager:
     )
     
     return model_training_config
+  
+  def get_model_eval_config(self) -> ModelEvaluationConfig:
+    config = self.config.model_evaluation
+    create_directories([config.root_dir])
+    model_eval_config = ModelEvaluationConfig(
+      metrics_file_name=config.metrics_file_name,
+      mlflow_tracking_uri=os.environ["MLFLOW_TRACKING_URI"],
+      model_path=config.model_path,
+      root_dir=config.root_dir,
+      target_col=self.schema.TARGET_COLUMN.name,
+      test_data_path=config.test_data_path,
+      model_params=self.params.ElasticNet
+    )
+    return model_eval_config
 
